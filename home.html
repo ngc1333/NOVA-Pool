@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NOVA Pool | Poolabdeckungen</title>
+  <link rel="icon" href="img/novapool_favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <a href="home.html" class="logo-link">
+          <img class="logo" src="img/novapool_logo.svg">
+        </a>
+      </div>
+
+      <div class="right-section">
+        <div class="navbar-link-container js-navbar-link-container">
+          <a class="navbar-link js-navbar-link" href="home.html">Startseite</a>
+        </div>
+        <div class="navbar-link-container js-navbar-link-container">
+          <a class="navbar-link js-navbar-link" href="pools.html">Pools und Whirlpools</a>
+        </div>
+        <div class="navbar-link-container js-navbar-link-container">
+          <a class="navbar-link js-navbar-link" href="covers.html">Poolabdeckungen</a>
+        </div>
+      </div>
+    </header>
+    <div class="split-container">
+      <div class="split-image">
+        <img src="img/pool4.jpg" alt="">
+      </div>
+      <div class="form-container">
+        <div class="lam-heading">
+          Lamellenanfrage
+        </div>
+        <div class="lam-select-container js-lam-select-container"></div>
+        <div class="input-container">
+          <div class="input-element">
+            <span>Breite:</span>
+            <input class="quantity-input js-qi-b js-qi" placeholder="Breite in m">
+          </div>
+          <div class="input-element">
+            <span>Länge:</span>
+            <input class="quantity-input js-qi-l js-qi" placeholder="Länge in m">
+          </div>
+          <div class="input-element">
+            <button class="calc-button js-calc-button">Berechne</button>
+          </div>
+        </div>
+        <div class="output-container">
+          <p>Vorläufige Berechnung des Preises  <br> <small>zzgl. Transportkosten</small></p>
+          <span class="total-price js-total-price">0.00 €</span>
+        </div>
+        <div class="date-container">
+          <span>gewünschtes Lieferdatum wählen: <br> <small>unter Vorbehalt</small></span>
+          <input type="date" class="unput-date">
+        </div>
+        <div class="request-container">
+          <div class="request-left">
+            <input name="stadt" placeholder="Stadt">
+            <input name="name" placeholder="Name">
+            <input name="tel" placeholder="Telefon">
+            <input name="mail" placeholder="E-Mail">
+          </div>
+          <div class="request-right">
+              <textarea name="anfrage" placeholder="Anfrage"></textarea>
+          </div>
+          <div class="request-left">
+            <div class="checkbox-container js-checkbox-container">
+              <input type="checkbox" class="js-checkbox">
+              <p>Ich erkläre mich mit der <a href="">Datenschutzerklärung</a> einverstanden</p>
+            </div>
+          </div>
+          <div class="request-right">
+            <button class="button-send js-button-send">Verschicken</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="data/lamellen.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+  </body>
+</html>
